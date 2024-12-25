@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Countdown Timer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <!-- Festive Header -->
+    <header>
+        <h1>Merry Christmas Countdown</h1>
+        <p>Let’s celebrate the birth of Jesus and the joy of the season!</p>
+    </header>
+
+    <!-- Falling Snow -->
+    <div class="snow-container"></div>
+
+    <!-- Content Block -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Made with ❤️ by Robel Shemeles to celebrate Christmas!</p>
+        <div class="new-year-timer">
+            <p>Time Left Until New Year:</p>
+            <p id="new-year-timer-display">Loading New Year Countdown...</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

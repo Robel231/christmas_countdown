@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <!-- Countdown Section -->
+    <section id="countdown">
+        <h2>Time Left Until Christmas</h2>
+        <div class="timer">
+            <p id="timer-display">Loading...</p>
+        </div>
+    </section>
+
+    <!-- Christmas Features -->
+    <section id="christmas-features">
+        <div class="feature">
+            <img src="{{ url_for('static', filename='images/snowman.png') }}" alt="Snowman">
+            <p>Frosty the Snowman says hello!</p>
+        </div>
+        <div class="feature">
+            <img src="{{ url_for('static', filename='images/santa.png') }}" alt="Santa Claus">
+            <p>Santa Claus is on his way with gifts!</p>
+        </div>           
+        <div class="feature">
+            <img src="{{ url_for('static', filename='images/nativity.png') }}" alt="Nativity Scene">
+            <p>Celebrating the birth of Jesus.</p>
+        </div>
+    </section>
+
+    <!-- Game Section -->
+    <section id="game-container">
+        <h2>Gift-Catching Game</h2>
+        <p>Move the basket with your arrow keys to catch the falling gifts!</p>
+        <div id="basket"></div>
+        <div id="gift"></div>
+    </section>
+
+    <!-- Snow Animation -->
+    <div class="snow-container"></div>
+{% endblock %}
+
+{% block footer %}
+    <footer>
+        <p>Time Left Until New Year:</p>
+        <div class="new-year-timer">
+            <p id="new-year-timer-display">Loading...</p>
+        </div>
+    </footer>
+{% endblock %}
