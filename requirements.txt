@@ -2,4 +2,4 @@ Flask==3.1.0
 Flask-Cors==5.0.0
 Flask-SQLAlchemy==3.0.4
 Flask-WTF==1.2.2
-gunicorn==<latest_version>
+gunicorn==23.0.0
