@@ -135,13 +135,6 @@ function staticSanta() {
     }
 }
 
-// Initialize Everything
-document.addEventListener("DOMContentLoaded", () => {
-    startCountdown();            // Start the countdown timer
-    createSnowflakes();          // Generate snowflakes
-    staticSanta();               // Ensure Santa stays in place
-    startGiftCatchingGame();     // Initialize the gift-catching game
-});
 // New Year Countdown Timer
 function startNewYearCountdown() {
     const newYearDate = new Date(new Date().getFullYear() + 1, 0, 1); // January 1st of the next year
@@ -169,7 +162,11 @@ function startNewYearCountdown() {
     updateNewYearCountdown();
 }
 
-// Initialize New Year Countdown
+// Initialize Everything
 document.addEventListener("DOMContentLoaded", () => {
-    startNewYearCountdown();
+    startCountdown();            // Start the Christmas countdown timer
+    createSnowflakes();          // Generate snowflakes
+    staticSanta();               // Ensure Santa stays in place
+    startGiftCatchingGame();     // Initialize the gift-catching game
+    startNewYearCountdown();    // Start the New Year countdown
 });
